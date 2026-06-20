@@ -18,6 +18,3 @@ ro.product.cpu.abi=armeabi-v7a
 ro.product.cpu.abi2=armeabi
 ro.board.platform=MT6589
 ro.build.product=D85-B
-#usb.vendor=17EF
-#usb.product.adb=74ED
-#usb.product.mtpadb=7718
