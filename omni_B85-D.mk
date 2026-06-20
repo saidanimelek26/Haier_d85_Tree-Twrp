@@ -21,7 +21,7 @@ $(call inherit-product, build/target/product/embedded.mk)
 $(call inherit-product, vendor/omni/config/common.mk)
 
 PRODUCT_DEVICE := Haier
-PRODUCT_NAME := omni_B85
+PRODUCT_NAME := omni_B85-D
 PRODUCT_BRAND := B85
 PRODUCT_MODEL := B85
 PRODUCT_MANUFACTURER := Haier
