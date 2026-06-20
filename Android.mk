@@ -16,4 +16,10 @@
 
 LOCAL_PATH := $(call my-dir)
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
+ifeq ($(TARGET_DEVICE),B85-B)
+
+include $(CLEAR_VARS)
+
+# Haier B85-B device configuration
+
+endif

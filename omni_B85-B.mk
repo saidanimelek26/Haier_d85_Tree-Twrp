@@ -14,17 +14,21 @@
 # limitations under the License.
 #
 
-# Embedded
-$(call inherit-product, build/target/product/embedded.mk)
+# Release name
+PRODUCT_RELEASE_NAME := B85-B
 
-# Inherit device configuration with correct path
-$(call inherit-product, device/Haier/B85-B/device.mk)
-
-# Inherit from our custom product configuration
+# Inherit from TWRP common tree
 $(call inherit-product, vendor/omni/config/common.mk)
 
+# Haier B85-B device tree
+$(call inherit-product, device/Haier/B85-B/device.mk)
+
+# Device identifier
 PRODUCT_DEVICE := B85-B
 PRODUCT_NAME := omni_B85-B
 PRODUCT_BRAND := Haier
 PRODUCT_MODEL := B85
 PRODUCT_MANUFACTURER := Haier
+
+# TWRP specific
+PRODUCT_USE_DYNAMIC_PARTITIONS := false

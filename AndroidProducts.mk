@@ -16,3 +16,6 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_B85-B.mk
+
+COMMON_LUNCH_CHOICES := \
+    omni_B85-B-eng

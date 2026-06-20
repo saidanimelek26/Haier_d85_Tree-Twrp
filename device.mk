@@ -14,14 +14,26 @@
 # limitations under the License.
 #
 
+LOCAL_PATH := device/Haier/B85-B
+
+# Kernel
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/Haier/B85-B/kernel
+LOCAL_KERNEL := $(LOCAL_PATH)/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
+# Copy kernel
 PRODUCT_COPY_FILES := \
 	$(LOCAL_KERNEL):kernel
 
+# Copy device-specific files
 PRODUCT_COPY_FILES += \
-	$(DEVICE_PATH)/default.prop:default.prop
+	$(LOCAL_PATH)/default.prop:default.prop \
+	$(LOCAL_PATH)/system.prop:system.prop \
+	$(LOCAL_PATH)/egl.cfg:system/lib/egl/egl.cfg
+
+# Device properties
+PRODUCT_PROPERTY_OVERRIDES := \
+	ro.product.board=B85 \
+	ro.board.platform=MT6589
