@@ -1,5 +1,5 @@
 #
-# Copyright 2017 The Android Open-Source Project
+# Copyright 2026 The Android Open-Source Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 #
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/Haier/B85-D/kernel
+LOCAL_KERNEL := device/Haier/B85-B/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
