@@ -1,4 +1,4 @@
-DEVICE_PATH := device/Haier/B85-D
+DEVICE_PATH := device/Haier/B85-B
 
 USE_CAMERA_STUB := true
 
